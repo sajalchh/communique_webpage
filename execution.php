@@ -26,9 +26,10 @@ $message = (new Swift_Message())
 
 // Send the message
   if(!($mailer->send($message))) {
-    echo "Error while sending Email.";
-  } else {
-    echo "Email sent successfully";
+    echo"Error.Form not submitted successfully";
+  } 
+  else {
+    echo"Form submitted successfully";
   }
 
 
