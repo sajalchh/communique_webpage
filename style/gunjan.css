@@ -9,6 +9,50 @@ AbD content begins */
      -moz-box-sizing: content-box !important;
           box-sizing: content-box !important;
 }*/
+/* New Preloader */
+.preloader {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-image: radial-gradient(#120f21,#352b61, #6854bf);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.middle, .outer, .firstdot, .second,.third, .Q  {	
+	position: absolute;
+	height: 25%;
+	opacity: 0;
+}	
+
+.preloader h3 {
+	position: absolute;
+	color: white;
+	font-family: Lucida Bright;
+	font-size: 100%;
+	top: 25%;
+	transform: translateY(-75%);
+	animation: text 1s linear infinite alternate;
+}
+.outer { animation: logoa 3s ease infinite alternate ;}
+.middle { animation: logob 3s ease  infinite alternate;}	
+.Q { animation: logoc 3s ease infinite alternate;}
+.firstdot { animation: logod 3s ease  infinite alternate;}
+.second { animation: logoe 3s ease infinite alternate;}
+.third { animation: logof 3s ease infinite alternate;}
+
+@keyframes logoa { 0% {opacity: 0;} 17%{opacity: 0;} 100%{opacity: 1;}}
+@keyframes logob { 0% {opacity: 0;} 33%{opacity: 0;} 100%{opacity: 1;}}
+@keyframes logoc { 0% {opacity: 0;} 50%{opacity: 0;} 100%{opacity: 1;}}
+@keyframes logod { 0% {opacity: 0;} 67%{opacity: 0;} 100%{opacity: 1;}}
+@keyframes logoe { 0% {opacity: 0;} 83%{opacity: 0;} 100%{opacity: 1;}}
+@keyframes logof { 0% {opacity: 0;} 97%{opacity: 0;} 100%{opacity: 1;}}	
+
+@keyframes text {from{transform : translateY(0px);} to{transform: translateY(10px);}} 
+
+/*preloader ends*/
 
 body{
   margin:0;
@@ -632,7 +676,7 @@ hr{ border-style: solid;
 
 /* Preloader */
 
-@keyframes loader {
+/* @keyframes loader {
   0%, 10%, 100% {
     width: 80px;
     height: 80px; }
@@ -696,7 +740,7 @@ hr{ border-style: solid;
   justify-content: center;
   overflow: hidden;
   z-index: 100;
-}
+}*/
 .content123
 {
   display: none;
