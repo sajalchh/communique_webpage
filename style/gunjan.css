@@ -1,14 +1,3 @@
-AbD content begins */
-/** {
-  -webkit-box-sizing: content-box !important;
-     -moz-box-sizing: content-box !important;
-          box-sizing: content-box !important;
-}
-*:before, *:after {
-  -webkit-box-sizing: content-box !important;
-     -moz-box-sizing: content-box !important;
-          box-sizing: content-box !important;
-}*/
 /* New Preloader */
 .preloader {
 	position: fixed;
@@ -53,6 +42,18 @@ AbD content begins */
 @keyframes text {from{transform : translateY(0px);} to{transform: translateY(10px);}} 
 
 /*preloader ends*/
+AbD content begins */
+/** {
+  -webkit-box-sizing: content-box !important;
+     -moz-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+*:before, *:after {
+  -webkit-box-sizing: content-box !important;
+     -moz-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}*/
+
 
 body{
   margin:0;
