@@ -1,10 +1,37 @@
 <html>
     <head>
-        <title>Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jgp" href="img/logo.jpg">
+        <title>Communiqué IIT Kharagpur</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
         <link rel="stylesheet" href="style/style-gal.css">
         <link rel="stylesheet" href="style/lightbox.css">
+        <link rel="stylesheet" href="style/gunjan.css">
     </head>
     <body>
+        <section id="nav-bar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#first-page"><img src="img/logo.jpg">Communiqué</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQs.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </section>
         <div class="masonry">
             <div class="item"><a data-lightbox="cq" class="overlay"><p>ISB</p></a><img src="https://drive.google.com/thumbnail?id=1P1e7rrmi_vw6yymwhvn5ePw7DoGPKXYZ"></div>
 <div class="item"><a data-lightbox="cq" class="overlay"><p>ISB</p></a><img src="https://drive.google.com/thumbnail?id=1qfQM6ElVGfUfaqx2JeTl_xkHGJO4GMXN"></div>
@@ -249,6 +276,8 @@
 </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
     <script src="script/script-gal.js"></script>
     <script src="script/lightbox.js"></script>
 </html>

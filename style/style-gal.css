@@ -12,6 +12,8 @@ html {
     column-count: 4;
     column-gap: 1em;
     width: 100%;
+    position: relative;
+    top:3em;
   }
   
   .item { /* Masonry bricks or child elements */
@@ -38,18 +40,13 @@ html {
   }
   
   /* Masonry on medium-sized screens */
-  @media only screen and (max-width: 1023px) and (min-width: 768px) {
-    .masonry {
-      column-count: 3;
-    }
-  }
-  
-  /* Masonry on small screens */
-  @media only screen and (max-width: 767px){
+  @media only screen and (max-width: 1023px){
     .masonry {
       column-count: 2;
     }
   }
+  
+  /* Masonry on small screens */
 
 @keyframes comein{
   0%{
