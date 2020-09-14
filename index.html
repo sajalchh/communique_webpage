@@ -47,20 +47,6 @@
 	</div> -->
 	
 	<!-- new preloader -->
-	<div class="chat-container">
-        <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
-        <script type="text/javascript">
-          WebChat.default.init({
-          selector: ".chat-container",
-          customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-          socketUrl: "https://trialchatbot.herokuapp.com/",
-          socketPath: "/socket.io/",
-          title: "Communique Bot",
-          subtitle: "Ask about CQ",
-          params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
-        })
-        </script>
-        </div>
 	<div class="preloader" id="preloader"> 
  		<img class="outer" src="./img/outer.png" alt="logo">
   		<img class="middle" src="./img/middle.png" alt="logo">  
@@ -94,6 +80,9 @@
 						</li>
 		        		<li class="nav-item">
 							<a class="nav-link"   href="#form" >CONTACT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.html">GALLERY</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="FAQs.html">FAQs</a>
@@ -363,7 +352,7 @@
 		</section>
 		<div class="gallery">
             <div class="gal-imgs">
-                <img class="gal-img" src="https://drive.google.com/thumbnail?id=1JULKRrEMYFERKFXH4AxpSwYARfi38Aqo">
+            	<img class="gal-img" src="https://drive.google.com/thumbnail?id=1JULKRrEMYFERKFXH4AxpSwYARfi38Aqo" title="Abhilash Datta">
                 <img class="gal-img" src="https://drive.google.com/thumbnail?id=11WisqdzhHKggakE8PC-W8k6IstCljbYU">
                 <img class="gal-img" src="https://drive.google.com/thumbnail?id=1b3F5ibBsE4t2_eXsRaSeE1SuRfgxlzuN">
                 <img class="gal-img" src="https://drive.google.com/thumbnail?id=1FP1akj7SaaxhbpjxZjStevW-fX_mtlBE">
