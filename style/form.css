@@ -250,7 +250,7 @@ input:focus, textarea:focus {
 	font-size:12px;
 	padding-top:8px;
   padding-bottom:8px;
-  padding: 8px;
+  padding: 8px 0px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -306,7 +306,7 @@ label.error{
 
 @media only screen and (max-width: 1024px){
   #form-div{
-    width:60%;
+    width:80%;
   }
 
   .feedback-input{
