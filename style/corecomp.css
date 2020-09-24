@@ -10,12 +10,12 @@ body {
 }
 
 .headingcc {
-    font-size: 9vw;
-    color: #01579B;
+    font-size: 6vw;
+    color: #00305b;
 }
 
 .maincc {
-    background-color: #eceff1;
+    background-color: #eaf4f6;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@ body {
     height: 22vw;
     width: 22vw;
     border-radius: 28vw;
-    background-color: #01579B;
+    background-color: #00305b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,12 +69,12 @@ body {
 
 .textcc {
     text-align: center;
-    color: #01579B;
+    color: #00305b;
 }
 
 @media screen and (max-width: 1024px) {
     .headingcc {
-        font-size: 14vw;
+        font-size: 10vw;
     }
     .boxcc {
         flex-direction: column;
