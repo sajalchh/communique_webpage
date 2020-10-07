@@ -701,69 +701,13 @@
 <script src="script/script.js"></script>
 <!-- <script src="script/preloader.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="multislider/js/multislider.js"></script>
+<script src="script/multislider.js"></script>
 <script type="text/javascript">
     $(window).on('load', function() {
         $(".preloader").fadeOut(2200, function() {
             $(".content123").fadeIn(10);
         });
     })
-
-    function addMargin() {
-        if (document.location.hash) {
-            setTimeout(function() {
-                window.scrollTo(window.scrollX, window.scrollY - 100);
-            }, 10);
-        }
-    }
-    // $('#exampleSlider').multislider({
-    //     // continuous: true,
-    //     // interval: 4000
-    //     duration: 2500
-    // });
-    // $('#exampleSlider').multislider('pause');
-    // for(var i=0;i<6;i++){
-    // 	$('#exampleSlider').multislider('next');
-    // }
-
-  $(function(){
-  var $slider = $('#exampleSlider');
-  var $Temp = document.getElementsByClassName("attorneys_card");
-//   var sizeTemp1 = $Temp.css("width").replace("px","");
-//   var sizeImage = parseInt(sizeTemp1);
-//   var marginSize = $Temp.css("marginLeft");
-
-  var sizeImage = 200;
-  var marginSize = 11;
-
-//   var items = $slider.children().length;
-//   var itemswidth = (items * sizeImage); // 140px width for each client item 
-//   $slider.css('width',itemswidth);
-  
-  var rotating = true;
-  var sliderspeed = 100;
-  var seeitems = setInterval(rotateSlider, sliderspeed);
-  
-  $(document).on({
-    mouseenter: function(){
-      rotating = false; // turn off rotation when hovering
-    },
-    mouseleave: function(){
-      rotating = true;
-    }
-  }, '#exampleSlider');
-  
-  function rotateSlider() {
-    if(rotating != false) {
-      var $first = $('#exampleSlider li:first');
-      $first.animate({ 'margin-left': '-'+sizeImage+'px' }, 3000, "swing", function() {
-        $first.remove().css({ 'margin-left': '0px' });
-        $('#exampleSlider li:last').after($first);
-      });
-    }else{
-    }
-  }
-});
 </script>
 
 </html>
