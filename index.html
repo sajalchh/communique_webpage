@@ -271,12 +271,12 @@
                 </br>
                 </br>
                 <!-- <div style="float :left ;width:5%;height:3px;">
-		  </div> -->
+          </div> -->
 
                 <!--Abhishek C-->
                 <div id="exampleSlider">
-                    <div class="attorneys_box MS-content">
-                        <div class="attorneys_card item">
+                    <ul class="attorneys_box MS-content">
+                        <li class="attorneys_card item">
                             <img src="img/abhishek_c.JPG" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -295,10 +295,10 @@
                 -->
                                 </div>
                             </center>
-                        </div>
+                        </li>
 
                         <!--Anushka-->
-                        <div class="attorneys_card item">
+                        <li class="attorneys_card item">
                             <img src="img/anushka.jpg" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -317,10 +317,10 @@
               -->
                                 </div>
                             </center>
-                        </div>
+                        </li>
 
                         <!--Pratik-->
-                        <div class="attorneys_card item">
+                        <li class="attorneys_card item">
                             <img src="img/pratik.jpg" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -339,10 +339,10 @@
               -->
                                 </div>
                             </center>
-                        </div>
+                        </li>
 
                         <!--Apoorva-->
-                        <div class="attorneys_card item">
+                        <li class="attorneys_card item">
                             <img src="img/apoorva.jpg" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -361,10 +361,10 @@
                 -->
                                 </div>
                             </center>
-                        </div>
+                        </li>
 
                         <!--Abhishek j-->
-                        <div class="attorneys_card item">
+                        <li class="attorneys_card item">
                             <img src="img/abhishek_j.JPG" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -380,12 +380,13 @@
 		     				<hr>Tel: 123-456-7890</br>
 		  						info@mysite.com
 		   					</div>
-                -->
+                --> 
+                               </div>
                             </center>
-                            </div>
+                        </li>
 
-                            <!--Pradipti-->
-                            <div class="attorneys_card item">
+                        <!--Pradipti-->
+                        <li class="attorneys_card item">
                                 <img src="img/pradipti.jpg" alt="po" class="OA_image">
                                 <center>
                                     </br>
@@ -401,16 +402,24 @@
               <hr>Tel: 123-456-7890</br>
                 info@mysite.com
               </div>
-              -->
-                                    </div>
-                                </center>
-                            </div>
+              -->               </div>
+                            </center>
+                        </li>
+
+                    </ul>
+                </div>
 
                             <!-- <div class="MS-controls">
 						<button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
 						<button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-					</div> -->
+                    </div> -->
+            </div>
         </section>
+
+
+
+
+
         <div class="gallery">
             <div class="gal-imgs">
                 <img class="gal-img" src="https://drive.google.com/thumbnail?id=1JULKRrEMYFERKFXH4AxpSwYARfi38Aqo">
@@ -692,30 +701,13 @@
 <script src="script/script.js"></script>
 <!-- <script src="script/preloader.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="multislider/js/multislider.js"></script>
+<script src="script/multislider.js"></script>
 <script type="text/javascript">
     $(window).on('load', function() {
         $(".preloader").fadeOut(2200, function() {
             $(".content123").fadeIn(10);
         });
     })
-
-    function addMargin() {
-        if (document.location.hash) {
-            setTimeout(function() {
-                window.scrollTo(window.scrollX, window.scrollY - 100);
-            }, 10);
-        }
-    }
-    $('#exampleSlider').multislider({
-        continuous: true,
-        interval: 4000,
-        duration: 2500
-    });
-    // $('#exampleSlider').multislider('pause');
-    // for(var i=0;i<6;i++){
-    // 	$('#exampleSlider').multislider('next');
-    // }
 </script>
 
 </html>

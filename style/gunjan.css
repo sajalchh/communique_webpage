@@ -685,6 +685,7 @@ hr {
     display: inline-block;
     width: 18%;
     margin: 0 1%;
+    padding: 1vw;
     position: relative;
     vertical-align: top;
     overflow: hidden;
@@ -756,11 +757,6 @@ hr {
     margin: 0 auto;
 }
 
-.attorneys_card {
-    /* min-width: 170px;
-  max-width: 300px;  */
-    padding: 1vw;
-}
 
 @media screen and (max-width:1024px) {
     .item {
