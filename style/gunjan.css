@@ -29,11 +29,12 @@
 .preloader h3 {
     position: absolute;
     color: white;
-    font-family: Lucida Bright;
+    /*font-family: Lucida Bright;*/
     font-size: 100%;
     top: 25%;
     transform: translateY(-75%);
     animation: text 1s linear infinite alternate;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .outer {
@@ -204,8 +205,9 @@ body {
 
 .nav-link {
     color: black !important;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -616,11 +618,11 @@ ul.b{
     }
     #our-vision {
         width: 100%;
-        line-height: 15px;
-        font-size: 85%;
+        /*line-height: 15px;
+        font-size: 85%;*/
     }
     .ourvision {
-        font-size: 90%;
+        /*font-size: 90%;*/
         padding-top: 50px;
     }
     .OV_heading {
@@ -793,6 +795,8 @@ hr {
     font-weight: 600;
     font-size: 2.5rem;
     color: #091f2f;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .faq_body {
@@ -805,6 +809,8 @@ hr {
     /* border-color: teal; */
     /* background: #f4f4f4background: linear-gradient(to left, #00948d 0%, #022979 100%); */
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .accordion-section .panel-default .panel-title a {

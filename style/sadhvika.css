@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 /* TOP Parralax */
 
 .parallax .content {}
@@ -90,6 +92,7 @@
 
 #form .form_div .form_header {
     background-image: linear-gradient(to bottom, #f53b57, #ff3f34);
+    font-family: 'Quicksand', sans-serif;
 }
 
 #form .form_div form {}
