@@ -271,12 +271,12 @@
                 </br>
                 </br>
                 <!-- <div style="float :left ;width:5%;height:3px;">
-		  </div> -->
+          </div> -->
 
                 <!--Abhishek C-->
                 <div id="exampleSlider">
-                    <div class="attorneys_box MS-content">
-                        <div class="attorneys_card item">
+                    <ul class="attorneys_box MS-content">
+                        <li class="attorneys_card item">
                             <img src="img/abhishek_c.JPG" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -295,10 +295,10 @@
                 -->
                                 </div>
                             </center>
-                        </div>
+                        </li>
 
                         <!--Anushka-->
-                        <div class="attorneys_card item">
+                        <li class="attorneys_card item">
                             <img src="img/anushka.jpg" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -317,10 +317,10 @@
               -->
                                 </div>
                             </center>
-                        </div>
+                        </li>
 
                         <!--Pratik-->
-                        <div class="attorneys_card item">
+                        <li class="attorneys_card item">
                             <img src="img/pratik.jpg" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -339,10 +339,10 @@
               -->
                                 </div>
                             </center>
-                        </div>
+                        </li>
 
                         <!--Apoorva-->
-                        <div class="attorneys_card item">
+                        <li class="attorneys_card item">
                             <img src="img/apoorva.jpg" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -361,10 +361,10 @@
                 -->
                                 </div>
                             </center>
-                        </div>
+                        </li>
 
                         <!--Abhishek j-->
-                        <div class="attorneys_card item">
+                        <li class="attorneys_card item">
                             <img src="img/abhishek_j.JPG" alt="po" class="OA_image">
                             <center>
                                 </br>
@@ -380,12 +380,13 @@
 		     				<hr>Tel: 123-456-7890</br>
 		  						info@mysite.com
 		   					</div>
-                -->
+                --> 
+                               </div>
                             </center>
-                            </div>
+                        </li>
 
-                            <!--Pradipti-->
-                            <div class="attorneys_card item">
+                        <!--Pradipti-->
+                        <li class="attorneys_card item">
                                 <img src="img/pradipti.jpg" alt="po" class="OA_image">
                                 <center>
                                     </br>
@@ -401,16 +402,24 @@
               <hr>Tel: 123-456-7890</br>
                 info@mysite.com
               </div>
-              -->
-                                    </div>
-                                </center>
-                            </div>
+              -->               </div>
+                            </center>
+                        </li>
+
+                    </ul>
+                </div>
 
                             <!-- <div class="MS-controls">
 						<button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
 						<button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-					</div> -->
+                    </div> -->
+            </div>
         </section>
+
+
+
+
+
         <div class="gallery">
             <div class="gal-imgs">
                 <img class="gal-img" src="https://drive.google.com/thumbnail?id=1JULKRrEMYFERKFXH4AxpSwYARfi38Aqo">
@@ -707,15 +716,54 @@
             }, 10);
         }
     }
-    $('#exampleSlider').multislider({
-        continuous: true,
-        interval: 4000,
-        duration: 2500
-    });
+    // $('#exampleSlider').multislider({
+    //     // continuous: true,
+    //     // interval: 4000
+    //     duration: 2500
+    // });
     // $('#exampleSlider').multislider('pause');
     // for(var i=0;i<6;i++){
     // 	$('#exampleSlider').multislider('next');
     // }
+
+  $(function(){
+  var $slider = $('#exampleSlider');
+  var $Temp = document.getElementsByClassName("attorneys_card");
+//   var sizeTemp1 = $Temp.css("width").replace("px","");
+//   var sizeImage = parseInt(sizeTemp1);
+//   var marginSize = $Temp.css("marginLeft");
+
+  var sizeImage = 200;
+  var marginSize = 11;
+
+//   var items = $slider.children().length;
+//   var itemswidth = (items * sizeImage); // 140px width for each client item 
+//   $slider.css('width',itemswidth);
+  
+  var rotating = true;
+  var sliderspeed = 100;
+  var seeitems = setInterval(rotateSlider, sliderspeed);
+  
+  $(document).on({
+    mouseenter: function(){
+      rotating = false; // turn off rotation when hovering
+    },
+    mouseleave: function(){
+      rotating = true;
+    }
+  }, '#exampleSlider');
+  
+  function rotateSlider() {
+    if(rotating != false) {
+      var $first = $('#exampleSlider li:first');
+      $first.animate({ 'margin-left': '-'+sizeImage+'px' }, 3000, "swing", function() {
+        $first.remove().css({ 'margin-left': '0px' });
+        $('#exampleSlider li:last').after($first);
+      });
+    }else{
+    }
+  }
+});
 </script>
 
 </html>

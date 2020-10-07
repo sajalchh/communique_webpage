@@ -125,9 +125,9 @@
         // updated options with defaults, measure slide widths for animation calculations, carry out setting implementations
         function createSettings() {
             defaults = settings || {
-    			continuous: false,	// endless scrolling with no pauses
+    			continuous: true,	// endless scrolling with no pauses
     			slideAll: false,	// slide all visible slides, or just one at a time
-    			// autoSlide: true,	// DEPRECATED
+    			autoSlide: true,	// DEPRECATED
     			interval: 2000,		// time bewteen slide animation, 0 or 'false' prevents auto-sliding
     			duration: 500,	    // duration of slide animation
     			hoverPause: true,	// pause slideshow on hover
