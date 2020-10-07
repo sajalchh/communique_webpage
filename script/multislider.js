@@ -4,17 +4,31 @@ $(window).on('load', function(){
         var $Temp = document.getElementsByClassName("attorneys_card");
         
         var rotating = true;
-        var sliderspeed = 100;
+        var sliderspeed = 500;
         var seeitems = setInterval(rotateSlider, sliderspeed);
         
-        $(document).on({
-        mouseenter: function(){
-            rotating = false; // turn off rotation when hovering
-        },
-        mouseleave: function(){
-            rotating = true;
-        }
-        }, '#exampleSlider');
+        if(!!('ontouchstart' in window)){//check for touch device
+            //behaviour and events for touch device
+            $("#exampleSlider").click(function(){
+                rotating = false;
+                setTimeout(function(){
+                    rotating = true;
+                }, 7000);
+              });
+            }
+            else{
+            //behaviour and events for pointing device like mouse
+            $(document).on({
+                mouseenter: function(){
+                    rotating = false; // turn off rotation when hovering
+                },
+                mouseleave: function(){
+                    rotating = true;
+                }
+                }, '#exampleSlider');
+            }
+
+        
         
         function rotateSlider() {
         if(rotating != false) {
