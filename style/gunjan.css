@@ -729,15 +729,18 @@ hr {
     color: #004d4d;
     font-size: 42px;
     padding-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .OA_name {
     color: #f3e9dc;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .OA_designation {
     color: #41e8d2;
     padding-top: 20px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .OA_icons {
