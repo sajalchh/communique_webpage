@@ -721,7 +721,7 @@ hr {
     transform: scale(1.1);
 }
 
-.OA_text {
+.OA_text, #executive {
     font-family: 'Quicksand', sans-serif;
 }
 
