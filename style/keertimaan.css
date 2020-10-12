@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+body{
+    background-color: #eaf4f6;
+}
 .eventHeading{
     color: black;
     font-family: 'Quicksand', sans-serif;
@@ -18,6 +21,7 @@
     align-items: center;
 }
 .eventContainer .eventContentLeft{
+    font-family: 'Quicksand', sans-serif;
     width: 50%;
     height: fit-content;
     margin: auto 0;
@@ -49,6 +53,7 @@
 }
 
 .eventContainer .eventContentRight{
+    font-family: 'Quicksand', sans-serif;
     width: 50%;
     height: fit-content;
     margin: auto 0;
