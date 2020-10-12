@@ -677,7 +677,7 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     margin: 0 5%;
-    border: 5px double #212d40;
+    border: 5px double #00305b;
     border-width: 0px 5px;
 }
 
@@ -693,18 +693,6 @@ hr {
     white-space: normal;
 }
 
-#exampleSlider .MS-controls button {
-    position: absolute;
-    top: 44%;
-}
-
-#exampleSlider .MS-controls .MS-left {
-    left: 10px;
-}
-
-#exampleSlider .MS-controls .MS-right {
-    right: 10px;
-}
 
 .our_attorneys_div {
     width: 100%;
@@ -715,6 +703,8 @@ hr {
 .OA_image {
     width: 100%;
     transition-duration: 0.7s;
+    outline: 0.2vw solid #ffffff;
+    outline-offset: 0.1%;
 }
 
 .OA_image:hover {
@@ -726,7 +716,7 @@ hr {
 }
 
 .OA_heading {
-    color: #004d4d;
+    color:  #00305b;
     font-size: 42px;
     padding-bottom: 30px;
     font-family: 'Quicksand', sans-serif;
@@ -785,9 +775,9 @@ hr {
 
 /*End of part 2*/
 
-.accordion-section {
+/* .accordion-section {
     padding-top: 100px;
-}
+} */
 
 .container h2 {
     font-family: Arial, Verdana;
@@ -798,18 +788,36 @@ hr {
     font-weight: bold;
 }
 
-.faq_body {
+/* .faq_body {
     background: linear-gradient(to left, #a7fffb 0%, #6699ff 100%);
+} */
+
+
+.faq_heading{
+    padding: 86px 10% 20px;
+    background-color: #00305b;
+    color: white;
+}
+.panel.panel-default{
+    border: 5px solid #00305b;
+    border-width: 5px 0;
+    margin-bottom: 15px;
+}
+
+.panel-heading{
+    background-color: rgba(0, 48, 91, 0.8);
+    color: white;
 }
 
 .accordion-section .panel-default>.panel-heading {
-    border: 5px solid teal;
-    background-color: rgb(179, 233, 255);
+    /* border: 5px solid teal;
+    background-color: rgb(179, 233, 255); */
     /* border-color: teal; */
     /* background: #f4f4f4background: linear-gradient(to left, #00948d 0%, #022979 100%); */
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 .accordion-section .panel-default .panel-title a {

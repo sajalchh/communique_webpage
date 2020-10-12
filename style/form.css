@@ -150,7 +150,7 @@ input[type=submit]:hover{
 }
 
 #form-div {
-    background-color: rgba(72, 72, 72, 0.4);
+    background-color: hsl(208 100% 13% / 1);
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 35px;
@@ -159,9 +159,11 @@ input[type=submit]:hover{
     /* float: left; */
     /* left: 50%; */
     /* position: absolute; */
-    margin-left: auto;
+    margin: 30px auto;
+    /* margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    margin-bottom: 30px; */
     border-radius: 7px;
     /* margin-left: -260px; */
     /* -moz-border-radius: 7px;

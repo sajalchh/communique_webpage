@@ -60,7 +60,7 @@
 #our-attorneys .OA_heading {
     /* background-image: linear-gradient(to bottom,#05386b, #0652dd); */
     color: white;
-    background-color: #212d40;
+    background-color: #00305b;
 }
 
 #our-attorneys .our_attorneys .attorneys_box {
@@ -68,7 +68,7 @@
 }
 
 .OA_text .attorneys_card {
-    background-color: #212d40;
+    background-color:  #00305b;
 }
 
 .OA_text .attorneys_box {
@@ -86,19 +86,25 @@
 /* Form */
 
 #form .form_div {
-    background-color: #100e17;
+    background-color: #00305b;
     /* background-color: teal; */
 }
 
 #form .form_div .form_header {
-    background-image: linear-gradient(to bottom, #f53b57, #ff3f34);
+    background-color: #ffffff;
     font-family: 'Quicksand', sans-serif;
+    color: #00305b;
+    font-weight: 900;
+}
 }
 
 #form .form_div form {}
 
 #form .form_div .contact_links {
-    background-color: #100e17;
+    background-color: #ffffff;
 }
 
 #form .form_div .contact_links .contact_links_data {}
+
+
+/*FAQ*/
