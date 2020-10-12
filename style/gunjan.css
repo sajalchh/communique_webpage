@@ -720,6 +720,8 @@ hr {
     font-size: 42px;
     padding-bottom: 30px;
     font-family: 'Quicksand', sans-serif;
+    border: 3px solid #00305b;
+    border-width: 10px 0 0;
 }
 
 .OA_name {
