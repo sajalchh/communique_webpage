@@ -3,9 +3,9 @@ body{
     background-color: #eaf4f6;
 }
 .eventHeading{
-    color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 6vw;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
     /* text-shadow: 1px 1px 8px grey; */
     text-align: center;
     background-color: #061a2c;
@@ -89,4 +89,8 @@ body{
     .eventContainer{
         text-align: center;
     }
+}
+
+.eventContentRight , .eventContentLeft {
+    font-family:  'Quicksand', sans-serif;
 }
