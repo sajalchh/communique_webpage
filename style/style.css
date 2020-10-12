@@ -196,3 +196,67 @@ body {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+.allteamcards{
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 80%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    background-color: #212d40;
+}
+
+.allteamcards .card{
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.allteamcards .card-img-overlay{
+    /* transform: translateY(20em); */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    /* transition: transform 0.4s ease; */
+    transition: opacity 0.4s ease;
+}
+
+.allteamcards .card:hover .card-img-overlay{
+    /* transform: translateY(0px); */
+    opacity: 1;
+}
+
+.allteamcards .teamlink{
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    margin: 0.5em;
+    transition: opacity 0.1s ease;
+}
+
+.allteamcards .teamlink img{
+    width: 100%;
+    height: 100%;
+}
+
+.teamlink:hover{
+    opacity: 0.4;
+}
+
+.allteamcards .card-title{
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.allteamcards .card-text{
+    margin-top: 20px;
+}
+
+.allteamcards .links{
+    position: relative;
+    top: 3em;
+}
